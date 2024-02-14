@@ -1,0 +1,9 @@
+<h1>This is a webapp.</h1>
+<h2>Welcome {{username}}</h2>
+
+<form>
+  One Way DataBinding: Username: <input type="text" name="uname" [value]="username" /> <br>
+  Two Way DataBinding: Username: <input type="text" name="uname" [(ngModel)]="username" /> <br>
+  <img [src]=imageUrl alt="My Profile Picture">
+  <button type="button" (click)="getData()">Get Data</button>
+</form>
