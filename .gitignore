@@ -4,3 +4,5 @@ node_modules/
 # Ignore build output directories
 dist/
 out/
+
+*.code-workspace

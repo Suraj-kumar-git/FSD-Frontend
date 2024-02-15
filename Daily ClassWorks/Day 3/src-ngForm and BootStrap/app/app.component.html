@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="alert alert-success">This div is styled with bootstrap alert-sucess</div>
+  <div class="alert alert-danger">This div is styled with bootstrap alert-danger</div>
+  <div class="alert alert-warning">This div is styled with bootstrap alert-warning</div>
+  <div class="alert alert-primary">This div is styled with bootstrap alert-primary</div>
+  <div class="alert alert-secondary">This div is styled with bootstrap alert-secondary</div>
+
+  <button type="button" class="btn btn-primary">Submit</button>
+
+
+<form #loginForm="ngForm" (ngSubmit)="getFormData(loginForm.value)" class="container col-md-4" action="">
+<div>
+  <label type="text">Enter Username: </label>
+  <input type="email" name="username" required class="form-control" ngModel #uid="ngModel"/>
+  <span style="color: red" *ngIf="uid.touched && uid.invalid">Username is required</span>
+</div>
+<div>
+  <label type="text">Enter Password</label>
+  <input type="password" name="password" required class="form-control" ngModel #password="ngModel"/>
+  <span style="color: red" *ngIf="password.touched && password.invalid">Password is required</span>
+</div>
+  <button type="submit" class="btn btn-success" [disabled]="loginForm.invalid">Submit</button>
+
+</form>
+
+
+
+<!-- <form #registerForm="ngForm" (ngSubmit)="getFormData(registerForm.value)">
+  <div>
+    <label>Enter your First Name: </label>
+    <input type="text" name="fname" ngModel #fname="ngModel"/>
+  </div>
+  <div>
+    <label>Enter last Name:</label>
+    <input type="text"name="lname" ngModel #lname="ngModel"/>
+  </div>
+  <div>
+    <label>Email id:</label>
+    <input type="email" name="email" ngModel #email="ngModel"/>
+  </div>
+  <div>
+    <label>Enter Phone Number:</label>
+    <input type="number" name="phone" ngModel #phone="ngModel"/>
+  </div>
+  <div>
+    <label>Create your password:</label>
+    <input type="password" name="password" ngModel #password="ngModel"/>
+  </div>
+</form> -->
+
+</body>
+</html>

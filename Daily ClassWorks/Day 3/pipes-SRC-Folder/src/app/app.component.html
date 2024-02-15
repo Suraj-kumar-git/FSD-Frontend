@@ -1,0 +1,16 @@
+<h1>US: {{5000 | currency}}</h1>
+<h1>Canada: {{5000 | currency:'CAD'}}</h1>
+<h1>Indian Rupee: {{5000 | currency:'INR'}}</h1>
+<h2>{{'Suraj' | uppercase}} {{'KUMAR' | lowercase}}</h2>
+<h1>{{5 | percent:'1.0'}}</h1>
+<h1>{{'2002-02-15'| date}}</h1>
+<h1>{{'2002-02-15'| date:'short'}}</h1>
+<h1>{{'2002-02-15'| date:'long'}}</h1>
+<h1>{{'2002-02-15'| date:'long' | uppercase}}</h1>
+<h2>{{'Suraj' |slice:0:3}}</h2>
+{{object|json}}
+<h2>SQRT of 16: {{16 | sqrt}}</h2>
+<h2>SQRT of 244: {{244 | sqrt | number}}</h2>
+
+<!-- <button type="button" (click)="getAll()">Display All Users</button> <br> -->
+User List:{{userList | json}}

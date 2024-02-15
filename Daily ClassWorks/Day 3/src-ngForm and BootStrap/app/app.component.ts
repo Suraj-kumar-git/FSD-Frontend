@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { login } from './login';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pipes';
+  title = 'project1';
+  getFormData(data:login){
+    alert("Username: "+data.username+", Password: "+data.password);
+    console.log(data);
+  }
 }
