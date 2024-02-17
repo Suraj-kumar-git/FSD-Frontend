@@ -1,0 +1,29 @@
+
+<div class="container col-lg-8">
+  <h1>Product Management System</h1><br>
+  <button type="button" class="btn btn-primary"(click)="getAllProducts()">Show all Products</button>
+  <button type="button" class="btn btn-secondary" routerLink="/addProduct">Add Product</button>
+<!-- <h2>{{productList | json}}</h2> -->
+
+
+<div class="container py-10">
+  <table class="table table-striped table-dark">
+    <thead>
+     <tr>
+       <th>ID</th>
+       <th>NAME</th>
+       <th>PRICE</th>
+     </tr>
+   </thead>
+     <tr *ngFor="let product of productList">
+       <td>{{product.id}}</td>
+       <td>{{product.name}}</td>
+       <td>{{product.price}}</td>
+       <td><button type="button" class="btn btn-warning" routerLink="/updateProduct/{{product.id}}/{{product.name}}/{{product.price}}">Update</button></td>
+       <td><button type="button" class="btn btn-danger" (click)="deleteProduct(product.id)">Delete</button></td>
+     </tr>
+ </table>
+</div>
+<router-outlet></router-outlet>
+</div>
+

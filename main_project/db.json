@@ -1,0 +1,54 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "mobile",
+      "price": 20000
+    },
+    {
+      "id": "2",
+      "name": "Smartphone",
+      "price": 25000
+    },
+    {
+      "id": "3",
+      "name": "Smartphone",
+      "price": 25000
+    },
+    {
+      "id": "4",
+      "name": "Smartphone",
+      "price": 25000
+    },
+    {
+      "id": "5",
+      "name": "Smartphone",
+      "price": 25000
+    },
+    {
+      "id": "6",
+      "name": "MacBook",
+      "price": 150000
+    },
+    {
+      "id": "7",
+      "name": "iPad",
+      "price": 60000
+    },
+    {
+      "id": "8",
+      "name": "Smartphone",
+      "price": 25000
+    },
+    {
+      "id": "9",
+      "name": "Cable",
+      "price": 100
+    },
+    {
+      "id": "11",
+      "name": "Phone Case",
+      "price": 60
+    }
+  ]
+}
