@@ -1,0 +1,32 @@
+<p>Loan Applications works!</p>
+
+<h2>Todo List</h2>
+<div class="container col-md-4">
+<form #loan="ngForm" (submit)="applyLoanApplication(loan.value)">
+
+<input type="number" placeholder="Enter amount" class="form-control" name="principal"  [(ngModel)]="principal"> 
+<input type="number" placeholder="Rate" class="form-control" name="rate"  [(ngModel)]="rate"> 
+<input type="number" placeholder="Duration" class="form-control" name="duration"  [(ngModel)]="duration"> 
+<button type="submit" class="btn btn-success">Add</button>
+</form>
+<table>
+    <thead>
+        <tr>
+            <th>Loan No.</th>
+            <th>Principal</th>
+            <th>Rate</th>
+            <th>Duration</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let loan of applications">
+            <td>{{loan.id}}</td>
+            <td>{{loan.principal}}</td>
+            <td>{{loan.rate}}</td>
+            <td>{{loan.duration}}</td>
+            <td><button type="button" (click)="deleteLoan(loan.id)" >Delete</button></td>
+        </tr>
+    </tbody>
+</table>
+

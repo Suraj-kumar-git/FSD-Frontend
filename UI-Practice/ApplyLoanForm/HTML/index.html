@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply Loan</title>
+  <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>Loan Application Form</header>
+    <form>
+      <div calss="form first">
+        <div class="details personal">
+          <span class="title">Review Your Personal Details</span>
+          <div class="fields">
+            <div class="input-field">
+              <label>Your Customer ID:</label>
+              <input type="text" name="id" value="101" required readonly>
+            </div>
+
+            <div class="input-field">
+              <label>Your Full Name</label>
+              <input type="text" name="fullname" value="Suraj Kumar" required readonly>
+            </div>
+
+            <div class="input-field">
+              <label>Phone Number</label>
+              <input type="number" name="phone" value="7352442612" required readonly>
+            </div>
+
+            <div class="input-field">
+              <label>Your Email Address</label>
+              <input type="email" name="email" value="surakumar@gmail.com" required readonly>
+            </div>
+
+            <div class="input-field">
+              <label>Your Date of Birth</label>
+              <input type="date" name="dob" value="2000-08-10" readonly required>
+          </div>          
+
+            <div class="input-field">
+              <label>Your age</label>
+              <input type="number" name="age" value="23" required readonly>
+            </div>
+
+            <div class="input-field">
+              <label>Gender</label>
+              <input type="text" name="gender" value="Male" required readonly>
+            </div>
+
+            <div class="input-field">
+              <label>PAN Card Number</label>
+              <input type="text" name="pan" value="IKJPK4317R" required readonly>
+            </div>
+
+            <div class="input-field">
+              <label>Credit Score</label>
+              <input type="number" name="Credit" value="789" required readonly>
+            </div>
+
+            <div class="input-field">
+              <label>Address</label>
+              <input type="text" name="address" value="Muzaffarpur" required readonly>
+            </div>
+
+            <div class="input-field">
+              <label>Country</label>
+              <input type="text" name="country" value="India" required readonly>
+            </div>
+
+            <div class="input-field">
+              <label>State</label>
+              <input type="text" name="state" value="Bihar" required readonly>
+            </div>
+
+          </div>
+        </div>
+        <div class="details ID">
+          <hr>
+          <span class="title">Enter Loan Informtion</span>
+          <div class="fields">
+            <div class="input-field">
+              <label>Enter Amount</label>
+              <input type="number" name="principal" value="" placeholder="Enter principal amount"  required>
+            </div>
+
+            <div class="input-field">
+              <label>Enter duration in months</label>
+              <input type="number" name="duration" value="" placeholder="Enter duration in months"  required>
+            </div>
+
+            <div class="input-field">
+              <select name="loantype">
+                <option name="Not Selected">Select Loan Type</option>
+                <option value="">Home Loan</option>
+                <option value="">Vehicle Loan</option>
+                <option value="">Personal Loan</option>
+                <option value="">Business Loan</option>
+                <option value="">Education Loan</option>
+                <option value="">Emergency Loan</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="details ID">
+          <hr>
+          <span class="title">Enter Property Informtion</span>
+          <div class="fields">
+            <div class="input-field">
+              <label>Enter Property Address</label>
+              <input type="text" name="propertyaddress" value="" placeholder="Property address"  required>
+            </div>
+
+            <div class="input-field">
+              <label>Enter property Area in m^2</label>
+              <input type="number" name="area" value="" placeholder="Area in m^2"  required>
+            </div>
+
+            <div class="input-field">
+              <label>Enter property Value in Indian Rupee</label>
+              <input type="number" name="value" placeholder="Value in Indian Rupee" required>
+            </div>
+
+            <div class="input-field">
+              <label>Upload Property Proof</label>
+              <input type="file" name="property" required>
+            </div>
+
+          </div>
+          <button>Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
