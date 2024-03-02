@@ -1,0 +1,35 @@
+ <form>
+  <div class="button1" (click)="getBowler()">Get Bowler with minimum number of matches</div>
+  <div class="button1" (click)="getBatsman()">Get Batsman with maximum number of matches</div>
+</form>
+<!-- <div *ngIf="selectedPlayer">
+  Selected Player: {{ selectedPlayer | json }}
+</div> -->
+<div *ngIf="selectedPlayer">
+  <table>
+    <thead>
+      <tr>
+        <th>Player ID</th>
+        <th>Player Name</th>
+        <th>Jersey Number</th>
+        <th>Role</th>
+        <th>Total Matches</th>
+        <th>Team Name</th>
+        <th>Country Name</th>
+        <th>Player Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ selectedPlayer.playerId }}</td>
+        <td>{{ selectedPlayer.playerName }}</td>
+        <td>{{ selectedPlayer.jerseyNumber }}</td>
+        <td>{{ selectedPlayer.role }}</td>
+        <td>{{ selectedPlayer.totalMatches }}</td>
+        <td>{{ selectedPlayer.teamName }}</td>
+        <td>{{ selectedPlayer.countryName }}</td>
+        <td>{{ selectedPlayer.playerDescription }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

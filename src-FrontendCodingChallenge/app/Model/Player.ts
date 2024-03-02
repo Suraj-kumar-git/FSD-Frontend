@@ -1,0 +1,10 @@
+export class Player{
+  playerId!:number;
+	playerName!:string;
+	jerseyNumber!:number;
+	role!:string;
+	totalMatches!:number;
+	teamName!:string;
+	countryName!:string;
+	playerDescription!:string;
+}
